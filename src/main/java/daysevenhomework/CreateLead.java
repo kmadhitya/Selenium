@@ -5,10 +5,13 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 public class CreateLead {
 
-	public static void main(String[] args) {
+	@Test
+	public void creatingLead(){
+		
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
@@ -37,7 +40,7 @@ public class CreateLead {
 		driver.findElementByName("submitButton").click();
 		}
 		driver.close();
-
+	
 	}
 
 }
